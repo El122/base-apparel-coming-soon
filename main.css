@@ -1,0 +1,204 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: url(images/bg-pattern-desktop.svg) 0 no-repeat, linear-gradient(135deg, white, #fff5f5);
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main .wrapper img.mobileImg {
+  display: none;
+}
+
+main .text {
+  margin: 75px 120px 75px 0;
+}
+
+main .text .logo {
+  margin-bottom: 120px;
+  margin-left: 30%;
+}
+
+main .text h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 600;
+  color: #413a3a;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+}
+
+main .text h1 span {
+  color: #ce9797;
+  font-weight: 300;
+  display: block;
+}
+
+main .text p {
+  font-size: 16px;
+  color: #ce9797;
+  max-width: 600px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+}
+
+main .text p.error {
+  display: none;
+  color: #f96262;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+
+main .text form {
+  margin-left: 30%;
+  position: relative;
+}
+
+main .text form input {
+  padding: 20px 30px;
+  color: #413a3a;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #ce9797;
+  width: 80%;
+  border-radius: 50px;
+  outline: none;
+}
+
+main .text form input::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+main .text form input:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+main .text form input::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+main .text form input::placeholder {
+  color: #ce9797;
+}
+
+main .text form input:focus {
+  background-color: #fff;
+}
+
+main .text form input:invalid {
+  border: 2px solid #f96262;
+}
+
+main .text form button {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+}
+
+main .text form button:hover {
+  background: #f8bfbf;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 25px -10px #f96262;
+  box-shadow: 0px 10px 25px -10px #f96262;
+}
+
+@media screen and (max-width: 1280px) {
+  main img.deskImg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  main .wrapper img.mobileImg {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .wrapper img.deskImg {
+    display: none;
+  }
+  main .text {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    text-align: center;
+  }
+  main .text h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 7%;
+    font-size: 40px;
+  }
+  main .text p {
+    margin: 0 auto 30px;
+    padding: 0 7%;
+  }
+  main .text .logo {
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-top: 0;
+    text-align: left;
+  }
+  main .text form {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10%;
+    padding-right: 10%;
+  }
+  main .text form input {
+    max-width: 450px;
+  }
+  main .text form button {
+    right: auto;
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  main .text form button {
+    right: auto;
+    left: 65%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
